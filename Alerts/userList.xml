@@ -1,0 +1,13 @@
+<userlist>
+   <user>
+      <server>bugzillaservername</server>
+      <email>useremail</email>
+      <passwd>userpasswd</passwd>
+      <assigned>assignedusername</asigned>
+      <description>writedescriptionhere</description>
+      <version>Alpha</version>
+      <component>API</component>
+      <summary>writesummary</summary>
+      <product>MyProduct</product>
+   </user>
+</userlist>

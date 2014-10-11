@@ -1,0 +1,9 @@
+#alertSplunk.sh
+
+
+
+#!/bin/bash
+
+        python /opt/splunk/bin/scripts/alertFromSplunk.py  $SPLUNK_ARG_1 $SPLUNK_ARG_2 $SPLUNK_ARG_3 $SPLUNK_ARG_4 
+$SPLUNK_ARG_5 $SPLUNK_ARG_6
+

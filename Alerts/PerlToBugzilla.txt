@@ -1,0 +1,17 @@
+use WWW::Bugzilla;
+use strict;
+use XML::Simple;
+
+my $userlist = XMLin('userList.xml');
+
+my $bz = WWW::Bugzilla->new(        server => $userlist->{user}->{server},
+                                    email => $userlist->{user}->{email},
+                                    password => $userlist->{user}->{passwd}, 
+                                    version => $userlist->{user}->{version},
+                                    product => $userlist->{user}->{product},
+                                    component => $userlist->{user}->{component},
+                                    assigned_to => $userlist->{user}->{assigned},
+                                    summary => $userlist->{user}->{summary},
+                                    description => $userlist->{user}->{description});
+
+    my $bug_number = $bz->commit;
